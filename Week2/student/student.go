@@ -6,6 +6,7 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -103,6 +104,42 @@ func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) []
 	}
 
 	return Groups
+}
+func OutputFile(Groups [][]string) {
+    f, err := os.Create("C:/Users/saber/Documents/IS405 - Project Mgt/Week2/studentdata.txt")
+
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    defer f.Close()
+
+	for i:=0;i < len(Groups); i++{
+		//fmt.Println("Group " + strconv.Itoa(i))
+		f.WriteString("Group " + strconv.Itoa(i + 1) + ": ")
+		for d:=0;d < len(Groups[i]); d++{
+			//fmt.Println(Groups[i][d])
+			if (d < 1){
+				f.WriteString(Groups[i][d])
+				f.WriteString("\n")
+			} else{
+				f.WriteString("         ")
+				f.WriteString(Groups[i][d])
+				f.WriteString("\n")
+			}
+			
+			
+		}
+		f.WriteString("\n")
+	}
+    _, err2 := f.WriteString("old falcon\n")
+
+    if err2 != nil {
+        log.Fatal(err2)
+    }
+
+    fmt.Println("done")
+
 }
 
 func MyName() string {

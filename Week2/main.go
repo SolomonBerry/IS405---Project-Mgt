@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"project2/student"
-	"strconv"
 )
 
 func main() {
@@ -14,13 +12,15 @@ func main() {
 	var Groups [][]string = student.MakeGroups(numGroups, groupSize, Remainder, Names)
 
 
-	for i:=0;i < len(Groups); i++{
-		fmt.Println("")
-		fmt.Println("Group " + strconv.Itoa(i))
-		for d:=0;d < len(Groups[i]); d++{
-			fmt.Println(Groups[i][d])
-		}
-	}
+	// for i:=0;i < len(Groups); i++{
+	// 	fmt.Println("")
+	// 	fmt.Println("Group " + strconv.Itoa(i))
+	// 	for d:=0;d < len(Groups[i]); d++{
+	// 		fmt.Println(Groups[i][d])
+	// 	}
+	// }
+
+	student.OutputFile(Groups)
 
 
 	
