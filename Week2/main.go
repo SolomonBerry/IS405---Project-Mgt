@@ -7,12 +7,12 @@ import (
 )
 
 func main() {
+	var Names []string = student.ReadNames()
 	var groupSize int = student.GroupSize()
-	var numGroups int = student.NumGroups(groupSize)
-	var Remainder int = student.Remainder (numGroups, groupSize)
-	var Groups [][]string = student.MakeGroups(numGroups, groupSize, Remainder)
+	var numGroups int = student.NumGroups(groupSize, Names)
+	var Remainder int = student.Remainder (numGroups, groupSize, Names)
+	var Groups [][]string = student.MakeGroups(numGroups, groupSize, Remainder, Names)
 
-	fmt.Println(len(Groups))
 
 	for i:=0;i < len(Groups); i++{
 		fmt.Println("")
