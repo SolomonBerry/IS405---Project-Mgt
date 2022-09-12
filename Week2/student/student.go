@@ -12,7 +12,7 @@ import (
 
 //var studentNames = [...]string{"Behling, John", "Bell, Dan", "Benson, Cole", "Brockbank, Stephen", "Carlock, Cody", "Choi, Brittany", "Choi, Ye Jin", "Clark, Madison", "Ferolino, Alexis Jane", "Guevara Alvarenga, Stefany", "Hansen, Nathan", "Hoather, Jeff", "Horlacher, Ethan", "Hunt, Brandon", "Jensen, David", "Jung, Euigun", "Kimball, Logan", "Ladle, Dallin", "Lee, SeungEun", "Lei, Sheng", "Leung, Miles", "Lo, Shaun", "Marks, Greg", "Marquis, Caden", "McConkie, Liberty", "McCord, Matthew", "McMillan, Zac", "Monson, Bailey", "Nelson, Sloan", "Peterson, James", "Piscione, Michael", "Prettyman, Samantha", "Ridd, Hayden", "Salvesen, Connor", "Shipley, David", "Stanley, Madison", "Sweeten, Daniela", "Tempest, Jordan", "Trammell,  Mark", "Andelin, Kyle", "Anderson, Taylor", "Baker, Nathan", "Barton, Zachary", "Berry, Solomon", "Bullock, Taylor", "Busco, Brian", "Davis, Michael", "Egbert, Seth", "Glazier, Tanner", "Goulding, Matt", "Jackson, Spencer", "Jensen, Emily", "Karras, Caden", "King, Spencer", "Lund, Thomas", "Luper, Abbie", "Maxfield, Chase", "Miller, Brinley", "Moody, Josh", "Moulton, McKay", "Nabrotzky, Keanna", "Nelson, Hunter", "Nielsen, Dustin", "Prock, Kamryn", "Sanderson, Ian", "Schow, Jackson", "Scorse, Brett", "Smith, Ali", "Sorensen, Stephen", "Souter, Kaden", "Spencer, Jessie", "Taylor, Chandler", "Washburn, Jackson", "Williams, Brennan"}
 
-
+//scans the names from a text file into a slice
 func ReadNames() []string {
 	var Names []string
 
@@ -38,6 +38,7 @@ func ReadNames() []string {
 
 	return Names
 }
+//returns the group size by asking the user for input
 func GroupSize() int {
 
 	var groupSize int
@@ -49,7 +50,7 @@ func GroupSize() int {
 
 
 } 
-
+//returns the number of groups
 func NumGroups(groupSize int, Names []string) int {
 
 
@@ -64,7 +65,7 @@ func NumGroups(groupSize int, Names []string) int {
 	//fmt.Println(numGroups)
 	return numGroups
 }
-
+//returns the Remainder
 func Remainder(numGroups int, groupSize int, Names []string) int {
 	
 	var Remainder int = len(Names) - (numGroups * groupSize)
@@ -72,7 +73,7 @@ func Remainder(numGroups int, groupSize int, Names []string) int {
 	return Remainder
 }
 
-
+//This function creates all of the groups and stores them into a slice of team slices.
 var counter int = 0
 func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) [][]string {
 	//Declare slice of slices
@@ -125,6 +126,7 @@ func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) []
 
 	return Groups
 }
+//Outputs the groups to a txt file
 func OutputFile(Groups [][]string, Remainder int) {
     f, err := os.Create("C:/Users/saber/Documents/IS405 - Project Mgt/Week2/studentdata.txt")
 
