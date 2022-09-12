@@ -132,6 +132,9 @@ func OutputFile(Groups [][]string, Remainder int) {
     }
 
     defer f.Close()
+	f.WriteString("Completed by: Solomon Berry, Alexis Transfiguracion, Keanna Nabrotzky, Miles Leung, SeungEun Lee")
+	f.WriteString("\n")
+	f.WriteString("\n")
 
 	for i:=0;i < len(Groups); i++{
 		//fmt.Println("Group " + strconv.Itoa(i))
@@ -168,6 +171,7 @@ func OutputFile(Groups [][]string, Remainder int) {
         log.Fatal(err2)
     }
 
+	fmt.Println("")
 	if (Remainder > 0){
 		fmt.Println("Done, you have " + strconv.Itoa(Remainder) + " groups with an extra member")
 	} else{
@@ -179,6 +183,7 @@ func OutputFile(Groups [][]string, Remainder int) {
 }
 //Bonus function!
 func MyName() {
+	fmt.Println("")
 	fmt.Println("Completed by: Solomon Berry, Alexis Transfiguracion, Keanna Nabrotzky, Miles Leung, SeungEun Lee")
 }
 
