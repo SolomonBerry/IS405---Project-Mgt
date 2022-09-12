@@ -105,7 +105,7 @@ func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) []
 
 	return Groups
 }
-func OutputFile(Groups [][]string) {
+func OutputFile(Groups [][]string, Remainder int) {
     f, err := os.Create("C:/Users/saber/Documents/IS405 - Project Mgt/Week2/studentdata.txt")
 
     if err != nil {
@@ -132,13 +132,13 @@ func OutputFile(Groups [][]string) {
 		}
 		f.WriteString("\n")
 	}
-    _, err2 := f.WriteString("old falcon\n")
+    _, err2 := f.WriteString("\n")
 
     if err2 != nil {
         log.Fatal(err2)
     }
 
-    fmt.Println("done")
+    fmt.Println("Done, you have " + strconv.Itoa(Remainder) + " groups with an extra member")
 
 }
 

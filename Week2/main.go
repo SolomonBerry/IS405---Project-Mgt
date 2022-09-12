@@ -20,7 +20,7 @@ func main() {
 	// 	}
 	// }
 
-	student.OutputFile(Groups)
+	student.OutputFile(Groups, Remainder)
 
 
 	
