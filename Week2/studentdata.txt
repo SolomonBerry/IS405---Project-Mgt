@@ -1,78 +1,78 @@
-Group 1:  Nelson, Sloan
-          Prock, Kamryn
-          Ridd, Hayden
-          Williams, Brennan
-          Hunt, Brandon
-          Bell, Dan
-          Taylor, Chandler
-          Sweeten, Daniela
-          Nielsen, Dustin
-          Prettyman, Samantha
-
-Group 2:  Bullock, Taylor
-          Kimball, Logan
-          Lei, Sheng
-          Piscione, Michael
-          Smith, Ali
+Group 1:  Davis, Michael
+          Nabrotzky, Keanna
+          McConkie, Liberty
           Spencer, Jessie
+          Schow, Jackson
+          Leung, Miles
+          Scorse, Brett
+          Luper, Abbie
+          Lee, SeungEun
+          Berry, Solomon
+
+Group 2:  Egbert, Seth
+          Ridd, Hayden
+          Bell, Dan
+          Salvesen, Connor
+          Glazier, Tanner
+          Ladle, Dallin
+          Miller, Brinley
+          Behling, John
+          Horlacher, Ethan
+          Clark, Madison
+
+Group 3:  Stanley, Madison
+          Jensen, Emily
+          Jensen, David
+          Shipley, David
+          Barton, Zachary
+          Lei, Sheng
+          Choi, Brittany
+          Prock, Kamryn
+          Moody, Josh
+          Hansen, Nathan
+
+Group 4:  Prettyman, Samantha
+          Sorensen, Stephen
+          Piscione, Michael
+          Williams, Brennan
+          Kimball, Logan
+          Maxfield, Chase
+          King, Spencer
+          Choi, Ye Jin
+          Lund, Thomas
+          Nelson, Sloan
+
+Group 5:  Smith, Ali
           Brockbank, Stephen
+          Jung, Euigun
+          Washburn, Jackson
+          Goulding, Matt
+          Benson, Cole
+          Peterson, James
+          Baker, Nathan
+          Hoather, Jeff
+          Sweeten, Daniela
+
+Group 6:  Trammell,  Mark
+          Guevara Alvarenga, Stefany
+          Souter, Kaden
+          Anderson, Taylor
+          Andelin, Kyle
+          McMillan, Zac
+          Carlock, Cody
+          Marquis, Caden
+          Jackson, Spencer
+          Moulton, McKay
+
+Group 7:  Ferolino, Alexis Jane
+          Taylor, Chandler
+          Monson, Bailey
+          Busco, Brian
           Nelson, Hunter
           Marks, Greg
-          Baker, Nathan
-
-Group 3:  Scorse, Brett
-          Souter, Kaden
-          Carlock, Cody
-          Benson, Cole
-          Shipley, David
-          Miller, Brinley
-          Barton, Zachary
           Tempest, Jordan
-          Sorensen, Stephen
-          Nabrotzky, Keanna
-
-Group 4:  Lee, SeungEun
-          King, Spencer
-          Maxfield, Chase
-          Behling, John
-          Luper, Abbie
-          Jensen, Emily
-          Moulton, McKay
-          Clark, Madison
-          Jackson, Spencer
-          Lund, Thomas
-
-Group 5:  Moody, Josh
-          Choi, Ye Jin
-          Leung, Miles
-          Anderson, Taylor
-          Trammell,  Mark
+          Nielsen, Dustin
           Karras, Caden
-          Horlacher, Ethan
-          Andelin, Kyle
-          Monson, Bailey
-          Glazier, Tanner
-
-Group 6:  Davis, Michael
-          Busco, Brian
-          Marquis, Caden
-          Goulding, Matt
-          Guevara Alvarenga, Stefany
-          Jung, Euigun
-          Peterson, James
-          Stanley, Madison
-          McCord, Matthew
-          Schow, Jackson
-
-Group 7:  Hansen, Nathan
-          Ladle, Dallin
           Sanderson, Ian
-          Ferolino, Alexis Jane
-          Hoather, Jeff
-          Washburn, Jackson
-          Lo, Shaun
-          Choi, Brittany
-          Jensen, David
-          McConkie, Liberty
 
 

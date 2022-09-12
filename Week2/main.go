@@ -1,3 +1,4 @@
+//Solomon Berry, Alexis Transfiguracion, Keanna Nabrotzky, Miles Leung, SeungEun Lee - It also prints our name in the terminal when it is done running
 package main
 
 import (
@@ -21,6 +22,7 @@ func main() {
 	// }
 
 	student.OutputFile(Groups, Remainder)
+	student.MyName()
 
 
 	

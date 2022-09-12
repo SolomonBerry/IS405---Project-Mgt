@@ -57,19 +57,16 @@ func NumGroups(groupSize int, Names []string) int {
 	var numGroups int = len(Names)/groupSize
 
 	var Remainder int = len(Names) - (numGroups * groupSize)
-	//fmt.Println(Remainder)
 	if (Remainder > numGroups){
 		numGroups ++
 	}
 
-	//fmt.Println(numGroups)
 	return numGroups
 }
 //returns the Remainder
 func Remainder(numGroups int, groupSize int, Names []string) int {
 	
 	var Remainder int = len(Names) - (numGroups * groupSize)
-	//fmt.Println(Remainder)
 	return Remainder
 }
 
@@ -180,8 +177,8 @@ func OutputFile(Groups [][]string, Remainder int) {
     
 
 }
-
-func MyName() string {
-	return "Solomon Berry"
+//Bonus function!
+func MyName() {
+	fmt.Println("Completed by: Solomon Berry, Alexis Transfiguracion, Keanna Nabrotzky, Miles Leung, SeungEun Lee")
 }
 
