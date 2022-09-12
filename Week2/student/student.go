@@ -116,14 +116,25 @@ func OutputFile(Groups [][]string, Remainder int) {
 
 	for i:=0;i < len(Groups); i++{
 		//fmt.Println("Group " + strconv.Itoa(i))
-		f.WriteString("Group " + strconv.Itoa(i + 1) + ": ")
+		if(i < 9){
+			f.WriteString("Group " + strconv.Itoa(i + 1) + ": ")	
+		} else{
+			f.WriteString("Group " + strconv.Itoa(i + 1) + ": ")
+		}
+
+		
 		for d:=0;d < len(Groups[i]); d++{
 			//fmt.Println(Groups[i][d])
 			if (d < 1){
-				f.WriteString(Groups[i][d])
-				f.WriteString("\n")
+				if (i < 9){
+					f.WriteString(" " + Groups[i][d])
+					f.WriteString("\n")
+				} else{
+					f.WriteString(Groups[i][d])
+					f.WriteString("\n")
+				}
 			} else{
-				f.WriteString("         ")
+				f.WriteString("          ")
 				f.WriteString(Groups[i][d])
 				f.WriteString("\n")
 			}
