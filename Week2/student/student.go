@@ -51,25 +51,27 @@ func GroupSize() int {
 } 
 
 func NumGroups(groupSize int, Names []string) int {
-	//var studentNames = [...]string{"Behling, John", "Bell, Dan", "Benson, Cole", "Brockbank, Stephen", "Carlock, Cody", "Choi, Brittany", "Choi, Ye Jin", "Clark, Madison", "Ferolino, Alexis Jane", "Guevara Alvarenga, Stefany", "Hansen, Nathan", "Hoather, Jeff", "Horlacher, Ethan", "Hunt, Brandon", "Jensen, David", "Jung, Euigun", "Kimball, Logan", "Ladle, Dallin", "Lee, SeungEun", "Lei, Sheng", "Leung, Miles", "Lo, Shaun", "Marks, Greg", "Marquis, Caden", "McConkie, Liberty", "McCord, Matthew", "McMillan, Zac", "Monson, Bailey", "Nelson, Sloan", "Peterson, James", "Piscione, Michael", "Prettyman, Samantha", "Ridd, Hayden", "Salvesen, Connor", "Shipley, David", "Stanley, Madison", "Sweeten, Daniela", "Tempest, Jordan", "Trammell,  Mark", "Andelin, Kyle", "Anderson, Taylor", "Baker, Nathan", "Barton, Zachary", "Berry, Solomon", "Bullock, Taylor", "Busco, Brian", "Davis, Michael", "Egbert, Seth", "Glazier, Tanner", "Goulding, Matt", "Jackson, Spencer", "Jensen, Emily", "Karras, Caden", "King, Spencer", "Lund, Thomas", "Luper, Abbie", "Maxfield, Chase", "Miller, Brinley", "Moody, Josh", "Moulton, McKay", "Nabrotzky, Keanna", "Nelson, Hunter", "Nielsen, Dustin", "Prock, Kamryn", "Sanderson, Ian", "Schow, Jackson", "Scorse, Brett", "Smith, Ali", "Sorensen, Stephen", "Souter, Kaden", "Spencer, Jessie", "Taylor, Chandler", "Washburn, Jackson", "Williams, Brennan"}
 
-	//Randomizing the array before assigning the students into groups
-	rand.Seed(time.Now().UnixNano())
-	rand.Shuffle(len(Names), func(i, j int) {
-		Names[i], Names[j] = Names[j], Names[i]
-	});
 
 	var numGroups int = len(Names)/groupSize
 
+	var Remainder int = len(Names) - (numGroups * groupSize)
+	//fmt.Println(Remainder)
+	if (Remainder > numGroups){
+		numGroups ++
+	}
+
+	//fmt.Println(numGroups)
 	return numGroups
 }
 
 func Remainder(numGroups int, groupSize int, Names []string) int {
 	
 	var Remainder int = len(Names) - (numGroups * groupSize)
-
+	//fmt.Println(Remainder)
 	return Remainder
 }
+
 
 var counter int = 0
 func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) [][]string {
@@ -86,20 +88,38 @@ func MakeGroups (numGroups int, groupSize int, remainder int, Names []string) []
 	
 	for i:=0;i<numGroups;i++{
 		var Group []string
-		if (i < remainder){
-			for d:=0;d < groupSize + 1; d++{
+		if (remainder < 0){
+			if (i > remainder){
+				for d:=0;d < groupSize - 1; d++{
+					
+					Group = append(Group, Names[counter])
+					counter++
+				}
+			} else{
+	
+				for d:=0;d < groupSize; d++{
+					Group = append(Group, Names[counter])
+					counter++
+				}
 				
-				Group = append(Group, Names[counter])
-				counter++
 			}
 		} else{
-
-			for d:=0;d < groupSize; d++{
-				Group = append(Group, Names[counter])
-				counter++
+			if (i < remainder){
+				for d:=0;d < groupSize + 1; d++{
+					
+					Group = append(Group, Names[counter])
+					counter++
+				}
+			} else{
+	
+				for d:=0;d < groupSize; d++{
+					Group = append(Group, Names[counter])
+					counter++
+				}
+				
 			}
-			
 		}
+		
 		Groups = append(Groups, Group)
 	}
 
@@ -149,7 +169,13 @@ func OutputFile(Groups [][]string, Remainder int) {
         log.Fatal(err2)
     }
 
-    fmt.Println("Done, you have " + strconv.Itoa(Remainder) + " groups with an extra member")
+	if (Remainder > 0){
+		fmt.Println("Done, you have " + strconv.Itoa(Remainder) + " groups with an extra member")
+	} else{
+		Remainder = -Remainder
+		fmt.Println("Done, you have " + strconv.Itoa(Remainder) + " groups with one less person")
+	}
+    
 
 }
 

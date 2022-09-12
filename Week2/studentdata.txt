@@ -1,99 +1,78 @@
-Group 1:  Jackson, Spencer
-          Kimball, Logan
-          Benson, Cole
-          Hoather, Jeff
-
-Group 2:  Washburn, Jackson
-          Salvesen, Connor
-          Brockbank, Stephen
-          King, Spencer
-
-Group 3:  Choi, Brittany
-          Glazier, Tanner
-          Moody, Josh
-
-Group 4:  Stanley, Madison
-          Smith, Ali
-          Goulding, Matt
-
-Group 5:  Sanderson, Ian
-          Jensen, Emily
-          Marks, Greg
-
-Group 6:  Spencer, Jessie
-          McCord, Matthew
-          Clark, Madison
-
-Group 7:  Marquis, Caden
-          Busco, Brian
-          Sweeten, Daniela
-
-Group 8:  Bell, Dan
-          Nelson, Hunter
-          Nelson, Sloan
-
-Group 9:  Lee, SeungEun
-          Berry, Solomon
-          Andelin, Kyle
-
-Group 10: Taylor, Chandler
-          Piscione, Michael
-          McConkie, Liberty
-
-Group 11: Lei, Sheng
-          Guevara Alvarenga, Stefany
-          Baker, Nathan
-
-Group 12: Prock, Kamryn
-          Ferolino, Alexis Jane
-          Choi, Ye Jin
-
-Group 13: Luper, Abbie
+Group 1:  Nelson, Sloan
+          Prock, Kamryn
           Ridd, Hayden
-          Peterson, James
-
-Group 14: Sorensen, Stephen
-          Trammell,  Mark
-          Lo, Shaun
-
-Group 15: Monson, Bailey
-          Lund, Thomas
-          Davis, Michael
-
-Group 16: Egbert, Seth
-          Carlock, Cody
           Williams, Brennan
-
-Group 17: Souter, Kaden
-          Scorse, Brett
-          McMillan, Zac
-
-Group 18: Schow, Jackson
-          Maxfield, Chase
-          Ladle, Dallin
-
-Group 19: Leung, Miles
-          Jung, Euigun
-          Tempest, Jordan
-
-Group 20: Anderson, Taylor
           Hunt, Brandon
+          Bell, Dan
+          Taylor, Chandler
+          Sweeten, Daniela
           Nielsen, Dustin
-
-Group 21: Jensen, David
-          Karras, Caden
-          Nabrotzky, Keanna
-
-Group 22: Hansen, Nathan
-          Behling, John
-          Miller, Brinley
-
-Group 23: Horlacher, Ethan
-          Barton, Zachary
           Prettyman, Samantha
 
-Group 24: Bullock, Taylor
+Group 2:  Bullock, Taylor
+          Kimball, Logan
+          Lei, Sheng
+          Piscione, Michael
+          Smith, Ali
+          Spencer, Jessie
+          Brockbank, Stephen
+          Nelson, Hunter
+          Marks, Greg
+          Baker, Nathan
+
+Group 3:  Scorse, Brett
+          Souter, Kaden
+          Carlock, Cody
+          Benson, Cole
           Shipley, David
+          Miller, Brinley
+          Barton, Zachary
+          Tempest, Jordan
+          Sorensen, Stephen
+          Nabrotzky, Keanna
+
+Group 4:  Lee, SeungEun
+          King, Spencer
+          Maxfield, Chase
+          Behling, John
+          Luper, Abbie
+          Jensen, Emily
           Moulton, McKay
+          Clark, Madison
+          Jackson, Spencer
+          Lund, Thomas
+
+Group 5:  Moody, Josh
+          Choi, Ye Jin
+          Leung, Miles
+          Anderson, Taylor
+          Trammell,  Mark
+          Karras, Caden
+          Horlacher, Ethan
+          Andelin, Kyle
+          Monson, Bailey
+          Glazier, Tanner
+
+Group 6:  Davis, Michael
+          Busco, Brian
+          Marquis, Caden
+          Goulding, Matt
+          Guevara Alvarenga, Stefany
+          Jung, Euigun
+          Peterson, James
+          Stanley, Madison
+          McCord, Matthew
+          Schow, Jackson
+
+Group 7:  Hansen, Nathan
+          Ladle, Dallin
+          Sanderson, Ian
+          Ferolino, Alexis Jane
+          Hoather, Jeff
+          Washburn, Jackson
+          Lo, Shaun
+          Choi, Brittany
+          Jensen, David
+          McConkie, Liberty
 
 
